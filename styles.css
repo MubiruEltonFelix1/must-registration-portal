@@ -47,15 +47,19 @@ body {
   font-size: 35px;
   font-weight: bold;
   margin-bottom: 20px;
-  color: #5C6AC4;
+  color: #0B2545;
   text-align: center;
   max-width: 700px;
 }
 
 .login > p:first-of-type {
   font-weight: bold;
-  font-size: 20px;
+  font-size: 17px;
   margin-bottom: 25px;
+  color: #1a1a1a;
+  text-align: center;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
 }
 
 form {
@@ -208,4 +212,13 @@ button:focus-visible {
   .portal-logo {
     width: 105px;
   }
+}
+
+.login { position: relative; overflow: hidden; }
+.login::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 5px;
+  background: linear-gradient(90deg, #003366, #00509e);
 }
